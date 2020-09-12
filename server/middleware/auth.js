@@ -33,32 +33,7 @@ module.exports.createSession = (req, res, next) => {
       next();
     });
 
-  // console.log(data);
-  // req.session = session;//{};
-  // req.session.hash = session.hash;
-  // req.session.userId = data.insertId;
-  // // console.log(session);
-  // console.log(` User ID: ${req.session.userId}`);
-  // if (session.userId) {
-  // let id = data.insertId;
-  // return models.Users.get({ id: id })
-  //   .then(user => {
-  //     if (user) {
-  //       console.log(`User is ${user.username} with id of ${user.id}`);
-  //       // console.log('user ' + JSON.stringify(user));
-  //       req.session.user = { username: user.username };
-  //     }
-  //     next();
-  //     // req.session = session;
-  //     // next();
-  //   });//).then(next());//.then(() => next());
-  //
-  // res.end();
-  // next();
 
-  // console.log('Cookies: ' + JSON.stringify(res.cookies));
-  // console.log('Next!!!!' + next);
-  // }
 
 };
 
