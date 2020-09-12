@@ -42,6 +42,7 @@ app.post('/signup',
     // console.log(req);
     let username = req.body.username;
     let password = req.body.password;
+    // console.log(req);
     models.Users.get(username).then((data) => {
       if (data) {
         throw new Error('user already exists');
@@ -57,9 +58,7 @@ app.post('/signup',
         res.redirect('/signup');
         res.end();
 
-      }
-
-      );
+      });
   });
 
 app.get('/links',
